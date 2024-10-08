@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Application</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        /* Header & Navigation */
+        header {
+            background-color: #000000;
+        }
+        .navbar-brand {
+            font-weight: bold;
+            color: white;
+        }
+        .navbar-nav .nav-link {
+            color: white;
+            margin-left: 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('hi.jpg') no-repeat center center;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        /* Content Section */
+        .content-section {
+            padding: 60px 0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: black;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .footer-links a {
+            color: white;
+            margin: 0 15px;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#">WorkSpace</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#features">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonials">Testimonials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 style="font-weight: bold;">Welcome to Our Responsive Web App</h1>
+
+          
+            <a href="#features" class="btn btn-primary btn-lg">Explore Features</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="content-section">
+        <div class="container">
+            <h2 class="text-center">Our Features</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <img src="feature1.png" alt="High speed and efficiency" class="img-fluid mb-3">
+                    <h3>Feature 1</h3>
+                    <p>High speed and efficiency.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="feature2.jpg" alt="Mobile-friendly layout" class="img-fluid mb-3">
+                    <h3>Feature 2</h3>
+                    <p>Mobile-friendly layout.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="feature3.jpeg" alt="Top-notch security measures" class="img-fluid mb-3">
+                    <h3>Feature 3</h3>
+                    <p>Top-notch security measures.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="content-section bg-light">
+        <div class="container">
+            <h2 class="text-center">Our Services</h2>
+            <div class="row text-center">
+                <div class="col-md-6">
+                    <img src="service1.png" alt="Providing the best solutions" class="img-fluid mb-3">
+                    <h3>Service 1</h3>
+                    <p>Providing the best solutions for your business.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="service2.avif" alt="Consulting and innovative strategies" class="img-fluid mb-3">
+                    <h3>Service 2</h3>
+                    <p>Consulting and innovative strategies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="content-section">
+        <div class="container">
+            <h2 class="text-center">What Our Clients Say</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <img src="client1.avif" alt="Client 1" class="img-fluid mb-3">
+                    <p>"Amazing service, highly recommend!"</p>
+                    <p>- Client 1</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="client2.jpg" alt="Client 2" class="img-fluid mb-3">
+                    <p>"Top-quality support and design."</p>
+                    <p>- Client 2</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="client3.webp" alt="Client 3" class="img-fluid mb-3">
+                    <p>"Professional and timely execution."</p>
+                    <p>- Client 3</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="content-section bg-light">
+        <div class="container">
+            <h2 class="text-center">Get in Touch</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <p>&copy; 2024 WorkSpace. All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS & Dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Optional Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
+
+
+
+
+
